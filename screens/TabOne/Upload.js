@@ -10,7 +10,7 @@ import { ENV } from 'app/config/Env';
 import axios from 'axios';
 import Constant from 'app/config/Constant';
 
-const { cloudVisonApiKey } = ENV;
+const { cloudTranslationApiKey, cloudVisonApiKey } = ENV;
 
 const styles = StyleSheet.create({
   area_modal: {
@@ -95,7 +95,15 @@ export default function Upload(
   { setModal }: { setModal:boolean },
 ) {
   const sendCloudTranslation = async (description: string) => {
-
+    axios.post(`${Constant.CLOUD_TRANSLATION_URL + cloudTranslationApiKey}&q=${encodeURI(description)}&target=ja`)
+      .then((res) => res.data)
+      .then((response) => {
+        const { translatedText } = response.data.translations[0];
+        Alert.alert(translatedText);
+      })
+      .catch((e) => {
+        console.log(e);
+      });
   };
 
   const sendCloudVision = async (image: string) => {
@@ -119,7 +127,7 @@ export default function Upload(
       .then(async (response) => {
         const { data } = await response;
         const { description } = await data.responses[0].textAnnotations[0];
-        Alert.alert(description);
+        sendCloudTranslation(description);
       })
       .catch((e) => {
         console.log(e);
