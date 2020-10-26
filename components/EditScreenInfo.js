@@ -1,11 +1,8 @@
 import React from 'react';
 import { StyleSheet, TouchableOpacity } from 'react-native';
 
-import * as ImageManipulator from 'expo-image-manipulator';
-import * as ImagePicker from 'expo-image-picker';
 import Modal from 'react-native-modal';
-import * as Permissions from 'expo-permissions';
-import Select from 'app/screens/TabOne/Select';
+import Upload from 'app/screens/TabOne/Upload';
 import { Text, View } from 'app/components/Themed';
 import { MonoText } from 'app/components/StyledText';
 import Colors from 'app/constants/Colors';
@@ -100,9 +97,9 @@ export default function EditScreenInfo({ path }: { path: string }) {
           </Text>
         </TouchableOpacity>
       </View>
+      { /** モーダル * */ }
       <Modal isVisible={modal} swipeToClose>
-        { /** 確認モーダル * */ }
-        <Select setModal={setModal} />
+        <Upload setModal={setModal} />
       </Modal>
     </View>
   );

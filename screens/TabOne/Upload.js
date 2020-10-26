@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  StyleSheet, Text, View, TouchableOpacity,
+  Alert, StyleSheet, Text, TouchableOpacity, View,
 } from 'react-native';
 
 import * as ImageManipulator from 'expo-image-manipulator';
@@ -91,7 +91,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export default function Select(
+export default function Upload(
   { setModal }: { setModal:boolean },
 ) {
   const sendCloudTranslation = async (description: string) => {
@@ -119,7 +119,7 @@ export default function Select(
       .then(async (response) => {
         const { data } = await response;
         const { description } = await data.responses[0].textAnnotations[0];
-        console.log(description);
+        Alert.alert(description);
       })
       .catch((e) => {
         console.log(e);
