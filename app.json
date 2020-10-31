@@ -19,7 +19,11 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSCameraUsageDescription": "画像をアップロードするためにカメラを使用します",
+        "NSPhotoLibraryUsageDescription": "画像をアップロードするためにフォトライブラリを使用します"
+      }
     },
     "web": {
       "favicon": "./assets/images/favicon.png"
