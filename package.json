@@ -13,6 +13,8 @@
     "preset": "jest-expo"
   },
   "dependencies": {
+    "@expo-google-fonts/inter": "^0.1.0",
+    "@expo-google-fonts/m-plus-1p": "^0.1.0",
     "@expo/vector-icons": "^10.0.0",
     "@react-native-community/masked-view": "0.1.10",
     "@react-navigation/bottom-tabs": "^5.8.0",
@@ -26,6 +28,7 @@
     "expo-font": "~8.3.0",
     "expo-image-manipulator": "~8.3.0",
     "expo-image-picker": "~9.1.0",
+    "expo-linear-gradient": "~8.3.0",
     "expo-linking": "^1.0.1",
     "expo-permissions": "~9.3.0",
     "expo-splash-screen": "~0.6.2",
