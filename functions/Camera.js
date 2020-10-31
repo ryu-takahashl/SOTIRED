@@ -3,13 +3,16 @@ import * as Permissions from 'expo-permissions';
 
 async function Camera() {
   const { status } = await Permissions.askAsync(Permissions.CAMERA);
+  let result = {};
   if (status === 'granted') {
-    const result = await ImagePicker.launchCameraAsync({
+    result = await ImagePicker.launchCameraAsync({
       allowsEditing: false,
       mediaTypes: ImagePicker.MediaTypeOptions.Images,
     });
-    return result;
+  } else if (status === 'denied') {
+    result.denied = true;
   }
+  return result;
 }
 
 export default Camera;

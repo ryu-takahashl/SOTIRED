@@ -1,6 +1,6 @@
-import { ENV } from 'app/config/Env';
 import axios from 'axios';
 import Constant from 'app/config/Constant';
+import { ENV } from 'app/config/Env';
 
 const { cloudVisonApiKey } = ENV;
 
@@ -15,20 +15,18 @@ async function CloudVision(img: string) {
       },
     ],
   });
-  try {
-    const response = await axios.post(Constant.CLOUD_VISION_URL + cloudVisonApiKey,
-      body, {
-        headers: {
-          Accept: 'application/json',
-          'Content-Type': 'application/json',
-        },
-      });
-    const { data } = response;
-    const { description } = data.responses[0].textAnnotations[0];
-    return description;
-  } catch (error) {
-    console.error(error);
-  }
+  // POST
+  const response = await axios.post(Constant.CLOUD_VISION_URL + cloudVisonApiKey,
+    body, {
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+    });
+  const { data } = response;
+  // 検出されたテキスト
+  const { description } = data.responses[0].textAnnotations[0];
+  return description;
 }
 
 export default CloudVision;
