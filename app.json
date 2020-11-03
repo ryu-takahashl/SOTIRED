@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Tshirt",
-    "slug": "Tshirt",
+    "name": "SOTIRED",
+    "slug": "so-tired",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -19,6 +19,7 @@
       "**/*"
     ],
     "ios": {
+      "bundleIdentifier": "com.sotired",
       "supportsTablet": false,
       "infoPlist": {
         "NSCameraUsageDescription": "画像をアップロードするためにカメラを使用します",
