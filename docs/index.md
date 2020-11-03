@@ -1,12 +1,15 @@
-## Welcome to GitHub Pages
+# SOTIRED プライバシーポリシー
 
-You can use the [editor on GitHub](https://github.com/RyuAndShit/SOTIRED/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
+### 利用者情報の取得
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+本アプリが利用者の個人情報を取得することはありません。
 
-### Markdown
+### 利用者情報の利用
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+本アプリが利用者の個人情報を利用することはありません。
+
+### 利用者情報の第三者提供 
+本アプリが利用者の個人情報を第三者へ提供することはありません。
 
 ```markdown
 Syntax highlighted code block
