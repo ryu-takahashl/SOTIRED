@@ -69,6 +69,19 @@ export default {
     }
   },
 
+  // itemの削除
+  async deleteItem(item) {
+    try {
+      // firestoreから削除はせずにuidをnullに変更
+      this.itemsCollection.doc(`${item.id}`).update({
+        uid: null,
+      });
+      return true;
+    } catch ({ message }) {
+      return { error: message };
+    }
+  },
+
   // itemコレクション
   get itemsCollection() {
     return firebase.firestore().collection('items');

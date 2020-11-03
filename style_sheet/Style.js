@@ -86,6 +86,21 @@ const style = StyleSheet.create({
     textAlign: 'right',
     marginTop: 5,
   },
+  modalText: {
+    fontFamily: 'Inter_400Regular',
+    marginLeft: 10,
+    marginRight: 10,
+    textAlign: 'center',
+  },
+  modalClose: {
+    marginTop: 10,
+    marginBottom: 10,
+    textAlign: 'center',
+    fontFamily: 'Inter_700Bold',
+  },
+  delete: {
+    fontFamily: 'Inter_700Bold', lineHeight: 50, textAlign: 'center',
+  },
 });
 
 export default style;
