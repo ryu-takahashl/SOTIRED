@@ -87,7 +87,7 @@ const style = StyleSheet.create({
     marginTop: 5,
   },
   modalText: {
-    fontFamily: 'Inter_400Regular',
+    fontFamily: 'Inter_500Medium',
     marginLeft: 10,
     marginRight: 10,
     textAlign: 'center',
