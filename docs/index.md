@@ -1,4 +1,9 @@
-**Privacy Policy**
+**プライバシーポリシー**
+
+このアプリは、Ryu Takahashi が作成した無料のアプリです。このページは本アプリを使う方に向けて、個人情報の収集、取り扱い方法などについて知らせるために作成してあります。
+
+本アプリをご使用していただく場合は、こちらのプライバシーポリシーに同意していただくということになります。アプリの利便性向上のため、匿名で個人を特定できない範囲で最新の注意を払い、データ解析を行う場
+合がございます。第三者に個人を特定できる情報を提供することはありません。
 
 Ryu Takahashi built the SOTIRED app as a Free app. This SERVICE is provided by Ryu Takahashi at no cost and is intended for use as is.
 
@@ -9,6 +14,9 @@ If you choose to use my Service, then you agree to the collection and use of inf
 The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at SOTIRED unless otherwise defined in this Privacy Policy.
 
 **Information Collection and Use**
+
+本アプリは会員登録が不要ですので、メールアドレスや名前などの個人情報を収集することはございません。
+ユーザーの方に登録していただいた写真・テキストはデータとして保存され、アプリの利便性向上のためデータ分析を行う可能性がございます。
 
 For a better experience, while using our Service, I may require you to provide us with certain personally identifiable information. The information that I request will be retained on your device and is not collected by me in any way.
 
@@ -45,6 +53,8 @@ I value your trust in providing us your Personal Information, thus we are strivi
 
 **Links to Other Sites**
 
+本アプリは、外部サイトもしくは外部サービスへのリンクを含んでおりません。
+
 This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by me. Therefore, I strongly advise you to review the Privacy Policy of these websites. I have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.
 
 **Children’s Privacy**
@@ -53,11 +63,18 @@ These Services do not address anyone under the age of 13. I do not knowingly col
 
 **Changes to This Privacy Policy**
 
+このプライバシーポリシーはアップデートされる可能性があります。
+何か変更がございましたらこのページを通して皆さんにお知らせしていくことになりますので、定期的にチェックしていただければと思います。
+
+このプライバシーポリシーは2020/11/04から有効となります。
+
 I may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page.
 
 This policy is effective as of 2020-11-04
 
 **Contact Us**
+
+ご質問やご提案がございましたら、お気兼ねなくこちらのメールアドレス（ryuandshit@gmail.com）にご連絡いただければと思います。
 
 If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at ryuandshit@gmail.com.
 
