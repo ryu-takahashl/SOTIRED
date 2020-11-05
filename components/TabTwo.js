@@ -1,10 +1,8 @@
 import React, { useEffect } from 'react';
-import Authentication from 'app/functions/Authentication';
 import {
   Alert, Image, RefreshControl, ScrollView,
 } from 'react-native';
 import Firebase from 'app/functions/Firebase';
-import firebase from 'firebase';
 import Modal from 'react-native-modal';
 import style from 'app/style_sheet/Style';
 import { SwipeListView } from 'react-native-swipe-list-view';
@@ -63,11 +61,6 @@ export default function TabTwo() {
   };
 
   useEffect(() => {
-    firebase.auth().onAuthStateChanged((user) => {
-      if (!user) {
-        Authentication.signInAnonymously();
-      }
-    });
     getItems();
   }, []);
 
