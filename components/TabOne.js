@@ -1,14 +1,12 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import {
   Alert, Image, ScrollView,
 } from 'react-native';
 import Animating from 'app/components/Animating';
-import Authentication from 'app/functions/Authentication';
 import Camera from 'app/functions/Camera';
 import CloudTranslation from 'app/functions/CloudTranslation';
 import CloudVision from 'app/functions/CloudVision';
 import Firebase from 'app/functions/Firebase';
-import firebase from 'firebase';
 import Library from 'app/functions/Library';
 import { LinearGradient } from 'expo-linear-gradient';
 import Manipulator from 'app/functions/Manipulator';
@@ -26,14 +24,6 @@ export default function TabOne() {
   const gradientColorTwo = ['#a770ef', '#cf8bf3', '#fdb99b'];
   const gradientStart = { x: 0.0, y: 1.0 };
   const gradientEnd = { x: 1.0, y: 1.0 };
-
-  useEffect(() => {
-    firebase.auth().onAuthStateChanged((user) => {
-      if (!user) {
-        Authentication.signInAnonymously();
-      }
-    });
-  }, []);
 
   // テキスト検出＆翻訳
   const translate = async (result) => {
@@ -121,6 +111,7 @@ export default function TabOne() {
             <Image
               resizeMode="cover"
               source={require('app/assets/images/camera.png')}
+              style={{ width: '50%', height: '50%', alignSelf: 'center' }}
             />
           )}
         </View>
@@ -194,6 +185,7 @@ export default function TabOne() {
             <Image
               resizeMode="cover"
               source={require('app/assets/images/text.png')}
+              style={{ width: '50%', height: '50%', alignSelf: 'center' }}
             />
           )}
         { /** 翻訳できたら表示 * */ }

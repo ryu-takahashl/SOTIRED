@@ -88,6 +88,7 @@ const style = StyleSheet.create({
   },
   modalText: {
     fontFamily: 'Inter_500Medium',
+    marginTop: 15,
     marginLeft: 10,
     marginRight: 10,
     textAlign: 'center',
