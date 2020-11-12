@@ -105,13 +105,13 @@ export default function TabOne() {
             <Image
               resizeMode="cover"
               source={{ uri: image }}
-              style={{ width: '100%', height: '100%', alignSelf: 'center' }}
+              style={style.pictureUploaded}
             />
           ) : (
             <Image
               resizeMode="cover"
               source={require('app/assets/images/camera.png')}
-              style={{ width: '50%', height: '50%', alignSelf: 'center' }}
+              style={style.picture}
             />
           )}
         </View>
@@ -182,12 +182,15 @@ export default function TabOne() {
               </Text>
             </View>
           ) : (
-            <Image
-              resizeMode="cover"
-              source={require('app/assets/images/text.png')}
-              style={{ width: '50%', height: '50%', alignSelf: 'center' }}
-            />
+            <View style={style.image}>
+              <Image
+                resizeMode="cover"
+                source={require('app/assets/images/text.png')}
+                style={style.picture}
+              />
+            </View>
           )}
+
         { /** 翻訳できたら表示 * */ }
         {(text && !saving) ? (
           <View style={style.btnarea}>

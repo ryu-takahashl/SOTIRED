@@ -1,4 +1,8 @@
 import { StyleSheet } from 'react-native';
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from 'react-native-responsive-screen';
 
 const style = StyleSheet.create({
   getStartedContainer: {
@@ -17,8 +21,18 @@ const style = StyleSheet.create({
     marginTop: '10%',
     justifyContent: 'center',
     alignItems: 'center',
-    width: 220,
-    height: 220,
+    width: wp(55),
+    height: hp(25),
+  },
+  picture: {
+    alignSelf: 'center',
+    width: wp(29),
+    height: hp(15),
+  },
+  pictureUploaded: {
+    alignSelf: 'center',
+    width: wp('52%'),
+    height: hp('24%'),
   },
   btnarea: {
     flexDirection: 'row',
@@ -51,6 +65,7 @@ const style = StyleSheet.create({
   text: {
     fontFamily: 'Inter_700Bold',
     textAlign: 'center',
+    fontSize: hp(1.8),
   },
   translating: {
     paddingTop: 10,
@@ -92,6 +107,7 @@ const style = StyleSheet.create({
     marginLeft: 10,
     marginRight: 10,
     textAlign: 'center',
+    lineHeight: 24,
   },
   modalClose: {
     marginTop: 10,

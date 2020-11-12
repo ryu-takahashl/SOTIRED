@@ -93,7 +93,7 @@ export default function TabTwo() {
             <Image
               resizeMode="cover"
               source={{ uri: target.img }}
-              style={{ height: 250 }}
+              style={{ height: 350 }}
             />
           </View>
           <View style={{ height: 250 }}>
