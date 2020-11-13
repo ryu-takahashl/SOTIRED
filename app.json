@@ -19,8 +19,10 @@
       "**/*"
     ],
     "ios": {
+      "buildNumber": "1",
+      "icon": "./assets/images/icon.png",
       "bundleIdentifier": "com.sotired",
-      "supportsTablet": false,
+      "supportsTablet": true,
       "infoPlist": {
         "NSCameraUsageDescription": "画像をアップロードするためにカメラを使用します",
         "NSPhotoLibraryUsageDescription": "画像をアップロードするためにフォトライブラリを使用します"
