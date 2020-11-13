@@ -14,6 +14,8 @@ SOTIREDは、画像解析とテキスト翻訳を組み合わせた翻訳アプ�
 
 翻訳したテキストとアップロードした写真は保存可能なので後から見返すこともできます。
 
+[App Store](https://apps.apple.com/us/app/sotired/id1538548990)
+
 現在はiOSのみ対応していますが、今後Androidでもリリースする予定です。
 
 ## <a id="dependency"> 環境（言語、フレームワーク、API etc） </a>
