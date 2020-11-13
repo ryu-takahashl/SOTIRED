@@ -17,7 +17,7 @@ SOTIREDは、画像解析とテキスト翻訳を組み合わせた翻訳アプ�
 
 現在はiOSのみ対応していますが、今後Androidでもリリースする予定です。
 
-## <a id="dependency"> 環境（言語、フレームワーク、サーバー要件 etc） </a>
+## <a id="dependency"> 環境（言語、フレームワーク、API etc） </a>
 
 | Title      | Description |
 | :--------- | :---------- |
@@ -25,4 +25,5 @@ SOTIREDは、画像解析とテキスト翻訳を組み合わせた翻訳アプ�
 | アプリケーション言語 | JavaScript |
 | 開発フレームワーク  | React Native |
 | 開発ツール  | Expo |
+| API | Cloud Vision API & Cloud Translation API |
 
