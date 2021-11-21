@@ -23,7 +23,7 @@ SOTIREDは、画像解析とテキスト翻訳を組み合わせた翻訳アプ�
 | Title      | Description |
 | :--------- | :---------- |
 | データベース     | Cloud Firestore |
-| アプリケーション言語 | JavaScript |
+| アプリケーション言語 | TypeScript, JavaScript |
 | 開発フレームワーク  | React Native |
 | 開発ツール  | Expo |
 | API | Cloud Vision API & Cloud Translation API |
